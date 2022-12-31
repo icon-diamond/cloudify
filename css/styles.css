@@ -255,6 +255,7 @@ a {
   border: 2px solid var(--color-border);
   outline: 0;
   border-radius: var(--border-radius);
+  color: var(--color-headings);
 }
 
 ::placeholder {
@@ -266,7 +267,6 @@ a {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
-  /* box-shadow: 0 5px 15px 9px #eff2f4; */
 }
 
 .input-group .input-field {
@@ -283,4 +283,26 @@ a {
   .input-field {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 0 18px 9px #f6f6f6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
 }
