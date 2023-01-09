@@ -208,9 +208,17 @@ a {
   font-size: 1.8rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
+  outline: 0;
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -713,5 +721,32 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain block */
+
+.block-domain .input-group {
+  border: 0;
+  box-shadow: 0 0 25px 18px #ebeff1;
+  margin: 5rem auto;
+  max-width: 700px;
+}
+
+.block-domain__price {
+  align-items: center;
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 5rem);
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 730px;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__price {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
