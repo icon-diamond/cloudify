@@ -770,7 +770,7 @@ a {
 
 /* Plan Block */
 .plan-block .grid {
-  gap: 7rem 5 rem;
+  gap: 7rem 5rem;
 }
 
 .plan-block .card {
@@ -803,5 +803,26 @@ a {
 @media screen and (min-width: 768px) {
   .feature-block:nth-of-type(even) .feature-block__content {
     order: 2;
+  }
+}
+
+/* Show-Case Block */
+
+.show-case__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .show-case .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .show-case__image {
+    justify-self: end;
+  }
+
+  .show-case__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
